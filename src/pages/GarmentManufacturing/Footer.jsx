@@ -50,7 +50,7 @@ const Footer = () => {
               <img 
                 src="/introline.png"
                 alt="Introline Logo"
-                className="w-[200px] sm:w-[200px] lg:w-[250px] h-[21px] sm:h-[31px] lg:h-[42px]"
+                className="w-[full] sm:w-[200px] lg:w-[250px] h-[80px] sm:h-[80px] lg:h-[42px]"
               />
               
               <div className="flex flex-col gap-4 sm:gap-5 lg:gap-[24px] w-full lg:w-[84%]">
