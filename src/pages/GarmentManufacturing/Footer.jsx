@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import EditText from '../../components/ui/EditText';
 
 const Footer = () => {
@@ -41,9 +41,9 @@ const Footer = () => {
             {/* Left Column - Newsletter */}
             <div className="flex flex-col gap-6 sm:gap-7 lg:gap-[30px] w-full lg:flex-1">
               <img 
-                src="/images/img_new_logo_with_i.svg"
-                alt="Fabriclore Logo"
-                className="w-[125px] sm:w-[187px] lg:w-[250px] h-[21px] sm:h-[31px] lg:h-[42px]"
+                src="/introline.png"
+                alt="Introline Logo"
+                className="w-[200px] sm:w-[200px] lg:w-[250px] h-[21px] sm:h-[31px] lg:h-[42px]"
               />
               
               <div className="flex flex-col gap-4 sm:gap-5 lg:gap-[24px] w-full lg:w-[84%]">
@@ -56,7 +56,7 @@ const Footer = () => {
                   globally.
                 </h3>
                 
-                <div className="flex items-center bg-text-secondary">
+                <div className="flex items-center ">
                   <span 
                     className="text-md sm:text-lg lg:text-[20px] font-black leading-[18px] sm:leading-[19px] lg:leading-[21px] text-text-secondary"
                     style={{ fontFamily: 'Epilogue' }}
@@ -76,68 +76,138 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Middle Column - Visit Studio */}
-            <div className="flex flex-col gap-4 sm:gap-5 lg:gap-[24px] w-full lg:w-[24%]">
+            {/* Middle Column - Main Offices */}
+            <div className="flex flex-col gap-4 sm:gap-5 lg:gap-[24px] w-full lg:w-[30%]">
               <h4 
                 className="text-sm sm:text-base font-bold leading-snug text-text-primary"
                 style={{ fontFamily: 'Epilogue' }}
               >
-                Visit Experience Studio
+                Our Offices
               </h4>
               
               <div className="flex flex-col gap-4 sm:gap-5 lg:gap-[24px]">
-                <p 
-                  className="text-sm sm:text-base font-normal leading-relaxed text-text-secondary"
-                  style={{ fontFamily: 'Epilogue' }}
-                >
-                  Malviya Nagar, Jaipur
-                  <br />
-                  Monday to Saturday
-                  <br />
-                  10 am - 05 pm IST
-                </p>
-                
-                <div className="flex items-center bg-text-secondary">
-                  <span 
-                    className="text-sm sm:text-base font-normal leading-snug text-text-secondary"
+                {/* India Office */}
+                <div>
+                  <h5 
+                    className="text-sm font-bold text-text-primary mb-2"
                     style={{ fontFamily: 'Epilogue' }}
                   >
-                    Get Directions
-                  </span>
+                    INDIA
+                  </h5>
+                  <p 
+                    className="text-xs sm:text-sm font-normal leading-relaxed text-text-secondary"
+                    style={{ fontFamily: 'Epilogue' }}
+                  >
+                    No.25(2)/22, Ground Floor,
+                    <br />
+                    Opp Vinayakar Kovil,
+                    <br />
+                    Kumarapuram 1st Street Ryapuram,
+                    <br />
+                    Tirupur, TN 641601 IN
+                    <br />
+                    <span className="font-semibold">+91 8681 800 075</span>
+                  </p>
+                </div>
+                
+                {/* UAE Office */}
+                <div>
+                  <h5 
+                    className="text-sm font-bold text-text-primary mb-2"
+                    style={{ fontFamily: 'Epilogue' }}
+                  >
+                    UAE
+                  </h5>
+                  <p 
+                    className="text-xs sm:text-sm font-normal leading-relaxed text-text-secondary"
+                    style={{ fontFamily: 'Epilogue' }}
+                  >
+                    AL MADEENA GARMENTS TRADING L.L.C
+                    <br />
+                    Office No. 101, 1st Floor,
+                    <br />
+                    Oppo. Mashreq Bank, Murshid Bazar,
+                    <br />
+                    Deira Dubai - U.A.E.
+                    <br />
+                    <span className="font-semibold">+971 502 289 916</span>
+                    <br />
+                    <span className="font-semibold">+971 56 504 9779</span>
+                  </p>
                 </div>
               </div>
             </div>
 
-            {/* Right Column - Fabriclore Links */}
+            {/* Right Column - Branches & Links */}
             <div className="flex flex-col gap-4 sm:gap-5 lg:gap-[24px] w-full lg:w-[36%] px-0 lg:px-[96px]">
-              <h4 
-                className="text-sm sm:text-base font-bold leading-snug text-text-primary"
-                style={{ fontFamily: 'Epilogue' }}
-              >
-                Fabriclore
-              </h4>
-              
-              <div className="flex flex-col gap-2 sm:gap-3 lg:gap-[12px]">
-                {[
-                  'Our Story',
-                  'Team', 
-                  'Blog',
-                  'In The News',
-                  'Careers',
-                  'Contact Us',
-                  'Terms of Service',
-                  'Refund policy',
-                  'Privacy Policy',
-                  'Your privacy choices'
-                ]?.map((link, index) => (
-                  <button
-                    key={index}
-                    className="text-sm sm:text-base font-normal leading-snug text-left text-text-primary hover:text-primary-background transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-background focus:ring-offset-2 rounded px-1 py-0.5"
-                    style={{ fontFamily: 'Epilogue' }}
-                  >
-                    {link}
-                  </button>
-                ))}
+              {/* Branches Section */}
+              <div className="mb-6">
+                <h4 
+                  className="text-sm sm:text-base font-bold leading-snug text-text-primary mb-4"
+                  style={{ fontFamily: 'Epilogue' }}
+                >
+                  Our Branches
+                </h4>
+                
+                <div className="flex flex-col gap-3 text-xs sm:text-sm">
+                  <div className="flex justify-between items-center">
+                    <span className="font-medium text-text-primary" style={{ fontFamily: 'Epilogue' }}>TIRUPUR</span>
+                    <span className="text-text-secondary" style={{ fontFamily: 'Epilogue' }}>+91 8681 800 073</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="font-medium text-text-primary" style={{ fontFamily: 'Epilogue' }}>BANGALORE</span>
+                    <span className="text-text-secondary" style={{ fontFamily: 'Epilogue' }}>+91 8681 800 095</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="font-medium text-text-primary" style={{ fontFamily: 'Epilogue' }}>CALICUT</span>
+                    <span className="text-text-secondary" style={{ fontFamily: 'Epilogue' }}>+91 8681 800 076</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="font-medium text-text-primary" style={{ fontFamily: 'Epilogue' }}>COCHIN</span>
+                    <span className="text-text-secondary" style={{ fontFamily: 'Epilogue' }}>+91 8681 800 072</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="font-medium text-text-primary" style={{ fontFamily: 'Epilogue' }}>DELHI</span>
+                    <span className="text-text-secondary" style={{ fontFamily: 'Epilogue' }}>+91 8681 800 081</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="font-medium text-text-primary" style={{ fontFamily: 'Epilogue' }}>MUMBAI</span>
+                    <span className="text-text-secondary" style={{ fontFamily: 'Epilogue' }}>+91 8681 800 079</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Introline Links */}
+              <div>
+                <h4 
+                  className="text-sm sm:text-base font-bold leading-snug text-text-primary"
+                  style={{ fontFamily: 'Epilogue' }}
+                >
+                  Introline
+                </h4>
+                
+                <div className="flex flex-col gap-2 sm:gap-3 lg:gap-[12px] mt-4">
+                  {[
+                    'Our Story',
+                    'Team', 
+                    'Blog',
+                    'In The News',
+                    'Careers',
+                    'Contact Us',
+                    'Terms of Service',
+                    'Refund policy',
+                    'Privacy Policy',
+                    'Your privacy choices'
+                  ]?.map((link, index) => (
+                    <button
+                      key={index}
+                      className="text-sm sm:text-base font-normal leading-snug text-left text-text-primary hover:text-primary-background transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-background focus:ring-offset-2 rounded px-1 py-0.5"
+                      style={{ fontFamily: 'Epilogue' }}
+                    >
+                      {link}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -178,7 +248,7 @@ const Footer = () => {
               className="text-xs sm:text-sm lg:text-[14px] font-normal leading-[13px] sm:leading-[14px] lg:leading-[15px] text-text-secondary"
               style={{ fontFamily: 'Epilogue' }}
             >
-              © 2026, Fabriclore.
+              © 2026, Introline.
             </p>
           </div>
         </div>

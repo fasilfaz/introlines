@@ -21,11 +21,11 @@ const Header = ({ className, ...props }) => {
           {/* Logo Section */}
           <div className="flex justify-between items-center w-full lg:w-[56%]">
             {/* Logo Image */}
-            <div className="flex-shrink-0 w-[120px] sm:w-[140px] lg:w-[164px]">
+            <div className="flex-shrink-0 w-[220px] sm:w-[180px] lg:w-[164px]">
               <img 
-                src="/images/img_link.svg" 
-                alt="Fabriclore Logo"
-                className="w-full h-[14px] sm:h-[16px] lg:h-[18px] object-contain"
+                src="/introline.png" 
+                alt="Introline Logo"
+                className="w-full h-[20px] sm:h-[16px] lg:h-[18px] object-contain"
               />
             </div>
 
