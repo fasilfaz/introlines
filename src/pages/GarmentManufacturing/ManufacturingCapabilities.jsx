@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ManufacturingCapabilities = () => {
   return (
     <section className="w-full bg-background-card">
@@ -31,13 +29,7 @@ const ManufacturingCapabilities = () => {
                   className="text-sm sm:text-base font-normal leading-relaxed text-text-primary w-full lg:w-[96%]"
                   style={{ fontFamily: 'Epilogue' }}
                 >
-                  Whether you are creating for fashion brands, retail shelves, or e-commerce drops —
-                  <br />
-                  Fabriclore's garment manufacturing capabilities are tailored for quality, customization
-                  <br />
-                  and speed. From clothing to accessories, our production ecosystem adapts to your
-                  <br />
-                  brand's goals.
+                  Whether you are creating for fashion brands, retail shelves, or e-commerce drops — Fabriclore's garment manufacturing capabilities are tailored for quality, customization and speed. From clothing to accessories, our production ecosystem adapts to your brand's goals.
                 </p>
               </div>
             </div>
@@ -69,9 +61,7 @@ const ManufacturingCapabilities = () => {
                     Trend-driven. Tailor-made. Technically flawless.
                     <br />
                     <span className="font-normal">
-                      We specialize in women's silhouettes that blend global trends
-                      <br />
-                      with flawless execution
+                      We specialize in women's silhouettes that blend global trends with flawless execution
                     </span>
                   </p>
                   
@@ -79,15 +69,8 @@ const ManufacturingCapabilities = () => {
                     className="text-sm sm:text-base leading-relaxed text-text-primary"
                     style={{ fontFamily: 'Epilogue' }}
                   >
-                    <span className="font-bold">Categories includes:</span>
-                    <span className="font-normal"> Tops & Blouses, Western wear, Beach</span>
-                  </p>
-                  
-                  <p 
-                    className="text-sm sm:text-base font-normal leading-snug text-text-primary"
-                    style={{ fontFamily: 'Epilogue' }}
-                  >
-                    wear, Lounge wear, Casual wear, and Bottom wear.
+                    <span className="font-bold">Categories include:</span>
+                    <span className="font-normal"> Tops & Blouses, Western wear, Beach wear, Lounge wear, Casual wear, and Bottom wear.</span>
                   </p>
                   
                   <p 
@@ -95,16 +78,7 @@ const ManufacturingCapabilities = () => {
                     style={{ fontFamily: 'Epilogue' }}
                   >
                     <span className="font-bold">Fabric Expertise:</span>
-                    <span className="font-normal"> Cotton, linen, viscose, rayon, silk blends,</span>
-                  </p>
-                  
-                  <p 
-                    className="text-sm sm:text-base font-normal leading-relaxed text-text-primary"
-                    style={{ fontFamily: 'Epilogue' }}
-                  >
-                    polyester blends, sustainable fabrics like LENZING, BEMBERG &
-                    <br />
-                    LIVA and Brila Viscose Range of fabrics
+                    <span className="font-normal"> Cotton, linen, viscose, rayon, silk blends, polyester blends, sustainable fabrics like LENZING, BEMBERG & LIVA and Brila Viscose Range of fabrics</span>
                   </p>
                 </div>
               </div>
@@ -134,9 +108,7 @@ const ManufacturingCapabilities = () => {
                     Function meets finesse. Made to move, made to last.
                     <br />
                     <span className="font-normal">
-                      Our men's wear production focuses on fit, fabric strength, and
-                      <br />
-                      finish — whether it is everyday essentials or elevated casuals.
+                      Our men's wear production focuses on fit, fabric strength, and finish — whether it is everyday essentials or elevated casuals.
                     </span>
                   </p>
                   
@@ -145,31 +117,15 @@ const ManufacturingCapabilities = () => {
                     style={{ fontFamily: 'Epilogue' }}
                   >
                     <span className="font-bold">Categories include:</span>
-                    <span className="font-normal"> Casual wear, Formal wear, Active wear,</span>
-                  </p>
-                  
-                  <p 
-                    className="text-sm sm:text-base font-normal leading-snug text-text-primary"
-                    style={{ fontFamily: 'Epilogue' }}
-                  >
-                    Ethnic wear, Lounge wear, and Sustainable wear
+                    <span className="font-normal"> Casual wear, Formal wear, Active wear, Ethnic wear, Lounge wear, and Sustainable wear</span>
                   </p>
                   
                   <p 
                     className="text-sm sm:text-base leading-relaxed text-text-primary"
                     style={{ fontFamily: 'Epilogue' }}
                   >
-                    <span className="font-bold">Fabric Expertise: </span>
-                    <span className="font-normal">Structured shirting fabrics (poplin, twill,</span>
-                  </p>
-                  
-                  <p 
-                    className="text-sm sm:text-base font-normal leading-relaxed text-text-primary"
-                    style={{ fontFamily: 'Epilogue' }}
-                  >
-                    oxford), bottom weights (twill, denim), sustainable fabrics, and
-                    <br />
-                    blends.
+                    <span className="font-bold">Fabric Expertise:</span>
+                    <span className="font-normal"> Structured shirting fabrics (poplin, twill, oxford), bottom weights (twill, denim), sustainable fabrics, and blends.</span>
                   </p>
                 </div>
               </div>
@@ -192,51 +148,31 @@ const ManufacturingCapabilities = () => {
                 </h2>
                 
                 <div className="space-y-3 sm:space-y-4">
-                  <div className="space-y-[18px]">
-                    <p 
-                      className="text-sm sm:text-base font-bold leading-relaxed text-text-primary"
-                      style={{ fontFamily: 'Epilogue' }}
-                    >
-                      The finishing touch to complete your collection.
-                      <br />
-                      <span className="font-normal">
-                        From statement pieces to essentials, our accessories
-                        <br />
-                        manufacturing extends your product line with consistency in
-                        <br />
-                        quality and style.
-                      </span>
-                    </p>
-                    
-                    <p 
-                      className="text-sm sm:text-base leading-relaxed text-text-primary ml-5"
-                      style={{ fontFamily: 'Epilogue' }}
-                    >
-                      <span className="font-bold">Categories includes:</span>
-                      <span className="font-normal"> Scarves, stoles, scrunchies, bags, ties,</span>
-                    </p>
-                  </div>
-                  
                   <p 
-                    className="text-sm sm:text-base font-normal leading-snug text-text-primary"
+                    className="text-sm sm:text-base font-bold leading-relaxed text-text-primary"
                     style={{ fontFamily: 'Epilogue' }}
                   >
-                    Bandhanas, Lining materials, and more.
+                    The finishing touch to complete your collection.
+                    <br />
+                    <span className="font-normal">
+                      From statement pieces to essentials, our accessories manufacturing extends your product line with consistency in quality and style.
+                    </span>
                   </p>
                   
                   <p 
-                    className="text-sm sm:text-base leading-relaxed text-text-primary ml-5"
+                    className="text-sm sm:text-base leading-relaxed text-text-primary"
                     style={{ fontFamily: 'Epilogue' }}
                   >
-                    <span className="font-bold">Material Options: </span>
-                    <span className="font-normal">Woven fabrics, lightweight blends,</span>
+                    <span className="font-bold">Categories include:</span>
+                    <span className="font-normal"> Scarves, stoles, scrunchies, bags, ties, Bandhanas, Lining materials, and more.</span>
                   </p>
                   
                   <p 
-                    className="text-sm sm:text-base font-normal leading-snug text-text-primary"
+                    className="text-sm sm:text-base leading-relaxed text-text-primary"
                     style={{ fontFamily: 'Epilogue' }}
                   >
-                    sustainable and natural fiber blends.
+                    <span className="font-bold">Material Options:</span>
+                    <span className="font-normal"> Woven fabrics, lightweight blends, sustainable and natural fiber blends.</span>
                   </p>
                 </div>
               </div>
@@ -268,13 +204,7 @@ const ManufacturingCapabilities = () => {
                     Enhance Your Space with Durable and Stylish Made-Ups.
                     <br />
                     <span className="font-normal">
-                      From daily essentials to decorative accents, our made-ups
-                      <br />
-                      manufacturing brings versatility and refinement to your
-                      <br />
-                      product range-crafted with the same commitment to quality
-                      <br />
-                      and design as your apparel line.
+                      From daily essentials to decorative accents, our made-ups manufacturing brings versatility and refinement to your product range-crafted with the same commitment to quality and design as your apparel line.
                     </span>
                   </p>
                   
@@ -283,11 +213,7 @@ const ManufacturingCapabilities = () => {
                     style={{ fontFamily: 'Epilogue' }}
                   >
                     Categories include:
-                    <span className="font-normal"> Table mats, napkins, aprons, tea towels,
-                    <br />
-                    cushion covers, table runners, placemats, kitchen towels, tote
-                    <br />
-                    bags and more.</span>
+                    <span className="font-normal"> Table mats, napkins, aprons, tea towels, cushion covers, table runners, placemats, kitchen towels, tote bags and more.</span>
                   </p>
                 </div>
               </div>
@@ -297,9 +223,7 @@ const ManufacturingCapabilities = () => {
                 style={{ fontFamily: 'Epilogue' }}
               >
                 Material Options:
-                <span className="font-normal"> Premium cotton, absorbent blends,
-                <br />
-                sustainable fabrics, and natural fiber textiles.</span>
+                <span className="font-normal"> Premium cotton, absorbent blends, sustainable fabrics, and natural fiber textiles.</span>
               </p>
             </div>
           </div>

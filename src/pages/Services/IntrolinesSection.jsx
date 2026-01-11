@@ -6,15 +6,15 @@ const IntrolinesSection = () => {
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <h2 
             className="text-[32px] sm:text-[40px] lg:text-[48px] font-bold leading-[1.1] text-text-primary mb-4 sm:mb-6"
-            style={{ fontFamily: 'Epilogue' }}
+            // style={{ fontFamily: 'Epilogue' }}
           >
             Experience Seamless Global Exports
             <br />
             <span className="text-accent-primary">with Introlines</span>
           </h2>
           <p 
-            className="text-lg sm:text-xl lg:text-2xl font-normal leading-relaxed text-text-primary max-w-4xl mx-auto"
-            style={{ fontFamily: 'Epilogue' }}
+            className=" sm:text-lg lg:text-2xl font-normal leading-relaxed text-text-primary max-w-4xl mx-auto"
+            // style={{ fontFamily: 'Epilogue' }}
           >
             Giving wings to your enterprise. Introlines provides a direct gateway from India to your international destinations. 
             Leveraging our official export licensing, we offer ultra-rapid logistics to deliver your goods beyond borders.
