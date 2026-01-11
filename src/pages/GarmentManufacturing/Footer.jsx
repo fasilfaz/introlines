@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-background-card">
       {/* Support Section */}
-      <div className="w-full bg-background-main h-[180px] sm:h-[282px] lg:h-[376px] flex items-center justify-center overflow-hidden relative">
+      {/* <div className="w-full bg-background-main h-[180px] sm:h-[282px] lg:h-[376px] flex items-center justify-center overflow-hidden relative">
         <div className="flex items-center whitespace-nowrap animate-scroll">
           <span className="text-[24px] sm:text-[36px] lg:text-[48px] font-bold text-primary-background opacity-40 mx-8" style={{ fontFamily: 'Epilogue' }}>
             we support #sustainablefashion
@@ -39,7 +39,7 @@ const Footer = () => {
             we support #qualityfabrics
           </span>
         </div>
-      </div>
+      </div> */}
       {/* Main Footer Content */}
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-0 py-[32px] sm:py-[48px] lg:py-[64px]">
         <div className="flex flex-col gap-8 sm:gap-12 lg:gap-[64px]">

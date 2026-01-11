@@ -1,7 +1,8 @@
-import React from 'react';
+
 import { Helmet } from 'react-helmet';
 import Header from '../../components/common/Header';
 import ServiceFeatures from '../GarmentManufacturing/ServiceFeatures';
+import IntrolinesSection from './IntrolinesSection';
 import ManufacturingCapabilities from '../GarmentManufacturing/ManufacturingCapabilities';
 import ProcessSteps from '../GarmentManufacturing/ProcessSteps';
 import WhyFabriclore from '../GarmentManufacturing/WhyFabriclore';
@@ -28,7 +29,7 @@ const ServicesHeroSection = () => {
               className="text-lg sm:text-xl lg:text-2xl font-normal leading-relaxed text-accent-light max-w-3xl mx-auto"
               style={{ fontFamily: 'Epilogue' }}
             >
-              Comprehensive garment manufacturing and fabric sourcing solutions for global fashion brands
+              Comprehensive garment manufacturing, fabric sourcing, and global export solutions for international fashion brands
             </p>
           </div>
         </div>
@@ -44,20 +45,21 @@ const Services = () => {
         <title>Garment Manufacturing Services | Fabric Sourcing & Production | Fabriclore</title>
         <meta 
           name="description" 
-          content="Comprehensive garment manufacturing services including fabric sourcing, production, quality control, and global shipping. Trusted by 500+ fashion brands worldwide." 
+          content="Comprehensive garment manufacturing services including fabric sourcing, production, quality control, and global export solutions. Seamless international shipping via sea, air, and road networks." 
         />
         <meta property="og:title" content="Garment Manufacturing Services | Fabric Sourcing & Production | Fabriclore" />
-        <meta property="og:description" content="Comprehensive garment manufacturing services including fabric sourcing, production, quality control, and global shipping. Trusted by 500+ fashion brands worldwide." />
+        <meta property="og:description" content="Comprehensive garment manufacturing services including fabric sourcing, production, quality control, and global export solutions. Seamless international shipping via sea, air, and road networks." />
       </Helmet>
 
       <main>
         <Header className="" />
         <ServicesHeroSection />
         <ServiceFeatures />
+        <IntrolinesSection />
         <ManufacturingCapabilities />
         <ProcessSteps />
         <WhyFabriclore />
-        <FAQ />
+        {/* <FAQ /> */}
         <ContactForm />
         <Footer />
       </main>

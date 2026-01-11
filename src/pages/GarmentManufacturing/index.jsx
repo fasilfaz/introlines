@@ -37,9 +37,9 @@ const GarmentManufacturing = () => {
         <ProcessSteps />
         <FabricCatalogue />
         <WhyFabriclore />
-        <ClientTestimonials />
-        <FAQ />
-        <CompanyDescription />
+        {/* <ClientTestimonials /> */}
+        {/* <FAQ /> */}
+        {/* <CompanyDescription /> */}
         <Footer />
       </main>
     </>
