@@ -110,6 +110,16 @@ module.exports = {
         'lg': 'var(--radius-lg)',
         'xl': 'var(--radius-xl)',
         '2xl': 'var(--radius-2xl)'
+      },
+      // Animations
+      animation: {
+        'scroll': 'scroll 20s linear infinite',
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        }
       }
     }
   },
