@@ -54,11 +54,11 @@ const Header = ({ className, ...props }) => {
           {/* Logo Section */}
           <div className="flex justify-between items-center w-full lg:w-[56%]">
             {/* Logo Image */}
-            <div className="flex-shrink-0 w-[220px] sm:w-[180px] lg:w-[164px]">
+            <div className="flex-shrink-0 w-[150px] sm:w-[150px] lg:w-[164px]">
               <img 
                 src="/introline.png" 
                 alt="Introline Logo"
-                className="w-full h-[20px] sm:h-[16px] lg:h-[18px] object-contain"
+                className="w-full h-[70px] sm:h-[50px] lg:h-[40px] object-contain"
               />
             </div>
 
