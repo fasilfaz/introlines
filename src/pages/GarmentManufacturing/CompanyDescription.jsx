@@ -133,60 +133,60 @@ const CompanyDescription = () => {
                 >
                   You can pick from many eco-friendly materials, like 
                 </span>
-                <span 
+                {/* <span 
                   className="text-sm sm:text-base font-normal leading-snug text-center text-text-primary bg-background-dark px-1"
                   style={{ fontFamily: 'Epilogue' }}
-                >
+                > */}
                   organic cotton
-                </span>
+                {/* </span> */}
                 <span 
                   className="text-sm sm:text-base font-normal leading-snug text-center text-text-primary"
                   style={{ fontFamily: 'Epilogue' }}
                 >
                   ,
                 </span>
-                <span 
+                {/* <span 
                   className="text-sm sm:text-base font-normal leading-snug text-center text-text-primary bg-background-dark px-1"
                   style={{ fontFamily: 'Epilogue' }}
-                >
+                > */}
                   TENCEL
-                </span>
+                {/* </span> */}
                 <span 
                   className="text-sm sm:text-base font-normal leading-snug text-center text-text-primary"
                   style={{ fontFamily: 'Epilogue' }}
                 >
                   ,
                 </span>
-                <span 
+                {/* <span 
                   className="text-sm sm:text-base font-normal leading-snug text-center text-text-primary bg-background-dark px-1"
                   style={{ fontFamily: 'Epilogue' }}
-                >
+                > */}
                   LIVA
-                </span>
+                {/* </span> */}
                 <span 
                   className="text-sm sm:text-base font-normal leading-snug text-center text-text-primary"
                   style={{ fontFamily: 'Epilogue' }}
                 >
                   ,
                 </span>
-                <span 
+                {/* <span 
                   className="text-sm sm:text-base font-normal leading-snug text-center text-text-primary bg-background-dark px-1"
                   style={{ fontFamily: 'Epilogue' }}
-                >
+                > */}
                   Viscose
-                </span>
+                {/* </span> */}
                 <span 
                   className="text-sm sm:text-base font-normal leading-snug text-center text-text-primary ml-1"
                   style={{ fontFamily: 'Epilogue' }}
                 >
                   blends, and 
                 </span>
-                <span 
+                {/* <span 
                   className="text-sm sm:text-base font-normal leading-snug text-center text-text-primary bg-background-dark px-1"
                   style={{ fontFamily: 'Epilogue' }}
-                >
+                > */}
                   Bemberg
-                </span>
+                {/* </span> */}
                 <span 
                   className="text-sm sm:text-base font-normal leading-snug text-center text-text-primary"
                   style={{ fontFamily: 'Epilogue' }}
