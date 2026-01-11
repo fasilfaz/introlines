@@ -27,9 +27,9 @@ const ContactForm = () => {
   return (
     <section className="w-full bg-background-card">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[56px] py-[64px] sm:py-[96px] lg:py-[128px]">
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-[88%] mb-[64px] sm:mb-[96px] lg:mb-[128px]">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-12 xl:gap-16 mb-[64px] sm:mb-[96px] lg:mb-[128px]">
           {/* Left Content */}
-          <div className="flex flex-col gap-6 sm:gap-7 lg:gap-[28px] w-full lg:w-[40%]">
+          <div className="flex flex-col gap-6 sm:gap-7 lg:gap-[28px] w-full lg:w-[42%]">
             <p 
               className="text-sm sm:text-base font-bold leading-snug text-text-primary"
               style={{ fontFamily: 'Epilogue' }}
@@ -57,7 +57,7 @@ const ContactForm = () => {
           </div>
 
           {/* Right Form */}
-          <div className="w-full lg:w-[54%] bg-background-section rounded-lg sm:rounded-xl lg:rounded-[26px] p-6 sm:p-8 lg:p-[48px]">
+          <div className="w-full lg:w-[52%] bg-background-section rounded-lg sm:rounded-xl lg:rounded-[26px] p-6 sm:p-8 lg:p-[48px]">
             <form onSubmit={handleSubmit} className="flex flex-col gap-4 sm:gap-6 lg:gap-[24px]">
               <div className="flex flex-col gap-3 sm:gap-4 lg:gap-[16px]">
                 {/* First Row */}

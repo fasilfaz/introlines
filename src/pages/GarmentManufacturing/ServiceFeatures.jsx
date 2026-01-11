@@ -3,17 +3,37 @@ import React from 'react';
 const ServiceFeatures = () => {
   const features = [
     {
-      icon: '/images/img_frame.svg',
+      icon: (
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM10 17L6 13L7.41 11.59L10 14.17L16.59 7.58L18 9L10 17Z" fill="#D4AF37"/>
+        </svg>
+      ),
       title: 'Secure Payments',
       description: 'Pay via direct bank transfer or use reliable payment gateways such as Razorpay for international credit cards, or UPI for India. Fabriclore is funded by international VCs ensuring trust and compliance for each customer.'
     },
     {
-      icon: '/images/img_frame_lime_900.svg',
+      icon: (
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 1Z" fill="#D4AF37"/>
+          <circle cx="12" cy="12" r="2" fill="#FFD700"/>
+        </svg>
+      ),
       title: 'Exceptional Technical Support',
       description: 'With Fabriclore you get a new age tech-enabled support from expert textile engineers. Whether your questions are related fabric specs, garmenting or commercial, our experts ensure peave of mind.'
     },
     {
-      icon: '/images/img_frame_lime_900_32x32.svg',
+      icon: (
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2" fill="none"/>
+          <path d="M8 12L12 8L16 12" stroke="#D4AF37" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M12 8V20" stroke="#D4AF37" strokeWidth="2" strokeLinecap="round"/>
+          <circle cx="12" cy="12" r="1" fill="#FFD700"/>
+          <circle cx="6" cy="18" r="1" fill="#D4AF37"/>
+          <circle cx="18" cy="6" r="1" fill="#D4AF37"/>
+          <circle cx="18" cy="18" r="1" fill="#D4AF37"/>
+          <circle cx="6" cy="6" r="1" fill="#D4AF37"/>
+        </svg>
+      ),
       title: 'Worldwide Shipping',
       description: 'Fabriclore works with top shippers including DHL, FedEx, ARAMEX, UPS to ensure lastmile global delivery. For more exonomical shipping we also offer sea routes for select location. High quality safe packaging is always a given from Fabriclore.'
     }
@@ -27,11 +47,7 @@ const ServiceFeatures = () => {
             <div key={index} className="flex flex-col gap-4 sm:gap-6 lg:gap-[24px] items-center text-center">
               {/* Icon Container */}
               <div className="flex justify-center items-center w-[64px] sm:w-[72px] lg:w-[80px] h-[64px] sm:h-[72px] lg:h-[80px] bg-background-subtle rounded-[32px] sm:rounded-[36px] lg:rounded-[40px] p-4 sm:p-5 lg:p-[24px]">
-                <img 
-                  src={feature?.icon}
-                  alt=""
-                  className="w-6 sm:w-7 lg:w-[32px] h-6 sm:h-7 lg:h-[32px]"
-                />
+                {feature?.icon}
               </div>
               
               {/* Content */}

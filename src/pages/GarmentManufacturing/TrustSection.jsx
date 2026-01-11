@@ -6,7 +6,7 @@ const TrustSection = () => {
       <div 
         className="w-full h-[576px] sm:h-[768px] lg:h-[1152px] bg-cover bg-center bg-no-repeat relative"
         style={{
-          backgroundImage: 'url(/images/img_picture_fabricloreinternationalgarmentmanufacturingjpg.png)'
+          backgroundImage: 'url(/bg.png)'
         }}
       >
         <div className="absolute inset-0 bg-background-overlay" />
