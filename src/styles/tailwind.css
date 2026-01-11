@@ -5,49 +5,50 @@
 @layer base {
   :root {
     /* Primary Colors */
-    --primary-background: #386641;
+    --primary-background: #1A6D8A;
     --primary-foreground: #ffffff;
-    --primary-light: #4a7c59;
-    --primary-dark: #2d5233;
+    --primary-light: #2A7D9A;
+    --primary-dark: #0B222B;
 
     /* Secondary Colors */
-    --secondary-background: #fffdfd;
-    --secondary-foreground: #292929;
-    --secondary-light: #fff8e8;
-    --secondary-dark: #996f00;
+    --secondary-background: #ffffff;
+    --secondary-foreground: #0B222B;
+    --secondary-light: #f8fafc;
+    --secondary-dark: #0B222B;
 
     /* Accent Colors */
-    --accent-color: #996f00;
+    --accent-color: #1A6D8A;
     --accent-foreground: #ffffff;
-    --accent-light: #b8860b;
-    --accent-dark: #7d5a00;
+    --accent-light: #2A7D9A;
+    --accent-dark: #0B222B;
+    --accent-primary: #1A6D8A;
 
     /* Border Colors */
-    --border-primary: #2929291e;
-    --border-secondary: #29292919;
-    --border-light: #2929290c;
+    --border-primary: #0B222B1e;
+    --border-secondary: #0B222B19;
+    --border-light: #0B222B0c;
 
     /* Text Colors */
-    --text-primary: #292929;
-    --text-secondary: #292929b2;
-    --text-muted: #996f00;
+    --text-primary: #0B222B;
+    --text-secondary: #0B222Bb2;
+    --text-muted: #1A6D8A;
     --text-inverse: #ffffff;
 
     /* Background Colors */
     --bg-main: #ffffff;
-    --bg-card: #fffdfd;
-    --bg-overlay: #0000004c;
-    --bg-section: #2929290c;
-    --bg-highlight: #fff8e8;
-    --bg-subtle: #996f000c;
-    --bg-dark: #292929;
+    --bg-card: #ffffff;
+    --bg-overlay: #0B222B4c;
+    --bg-section: #0B222B0c;
+    --bg-highlight: #f1f8fb;
+    --bg-subtle: #1A6D8A0c;
+    --bg-dark: #0B222B;
 
     /* Component Colors */
-    --header-bg: #fffdfd;
-    --button-bg: #386641;
+    --header-bg: #ffffff;
+    --button-bg: #1A6D8A;
     --button-text: #ffffff;
-    --input-border: #2929291e;
-    --icon-bg: #29292919;
+    --input-border: #0B222B1e;
+    --icon-bg: #0B222B19;
 
     /* Typography Variables */
     --font-size-xs: 14px;

@@ -9,7 +9,7 @@ const ProcessSteps = () => {
           <div className="flex flex-col items-start gap-4 sm:gap-6 lg:gap-8">
             {/* How it Works Title */}
             <h1 
-              className="text-[64px] sm:text-[96px] lg:text-[128px] xl:text-[160px] font-bold leading-[0.75] text-transparent bg-gradient-to-b from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text"
+              className="text-[64px] sm:text-[96px] lg:text-[128px] xl:text-[160px] font-bold leading-[0.75] text-transparent bg-gradient-to-b from-[#1A6D8A] via-[#2A7D9A] to-[#0B222B] bg-clip-text"
               style={{ 
                 fontFamily: 'Epilogue',
                 textShadow: '0 4px 8px rgba(0,0,0,0.1)'

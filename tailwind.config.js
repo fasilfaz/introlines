@@ -30,7 +30,8 @@ module.exports = {
           color: "var(--accent-color)",
           foreground: "var(--accent-foreground)",
           light: "var(--accent-light)",
-          dark: "var(--accent-dark)"
+          dark: "var(--accent-dark)",
+          primary: "var(--accent-primary)"
         },
         // Border Colors
         border: {

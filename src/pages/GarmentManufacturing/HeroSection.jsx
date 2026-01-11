@@ -4,12 +4,12 @@ import Button from '../../components/ui/Button';
 const HeroSection = () => {
   return (
     <>
-     {/* Second Hero Section - Large Title */}
+      {/* Second Hero Section - Large Title */}
       <section className="w-full bg-background-highlight py-12 sm:py-16 lg:py-16">
         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 
-              className="text-[48px] sm:text-[64px] md:text-[80px] lg:text-[96px] xl:text-[112px] font-bold leading-[1.1] text-accent-light"
+              className="text-[48px] sm:text-[64px] md:text-[80px] lg:text-[96px] xl:text-[112px] font-bold leading-[1.1] text-primary-background"
               style={{ fontFamily: 'Epilogue' }}
             >
               Garment
@@ -42,7 +42,7 @@ const HeroSection = () => {
                 <div className="max-w-lg">
                   {/* Main Heading */}
                   <h1 
-                    className="text-[28px] sm:text-[32px] lg:text-[32px] xl:text-[36px] font-bold leading-[1.2] text-accent-light mb-4 sm:mb-6 lg:mb-3"
+                    className="text-[28px] sm:text-[32px] lg:text-[32px] xl:text-[36px] font-bold leading-[1.2] text-text-primary mb-4 sm:mb-6 lg:mb-3"
                     style={{ fontFamily: 'Epilogue' }}
                   >
                     All-in-One Garment
@@ -55,8 +55,8 @@ const HeroSection = () => {
                   {/* Feature List */}
                   <div className="space-y-3 sm:space-y-4 lg:space-y-2 mb-6 sm:mb-8 lg:mb-4">
                     <div className="flex items-start gap-3">
-                      <span className="text-accent-light text-lg font-bold mt-0.5 flex-shrink-0">+</span>
-                      <div className="text-sm sm:text-base lg:text-sm text-accent-light leading-relaxed" style={{ fontFamily: 'Epilogue' }}>
+                      <span className="text-primary-background text-lg font-bold mt-0.5 flex-shrink-0">+</span>
+                      <div className="text-sm sm:text-base lg:text-sm text-text-primary leading-relaxed" style={{ fontFamily: 'Epilogue' }}>
                         <span className="font-bold">Fabric + Textile Design + Garment Manufacturing</span> all under
                         <br />
                         one roof.
@@ -64,22 +64,22 @@ const HeroSection = () => {
                     </div>
 
                     <div className="flex items-start gap-3">
-                      <span className="text-accent-light text-lg font-bold mt-0.5 flex-shrink-0">+</span>
-                      <div className="text-sm sm:text-base lg:text-sm text-accent-light leading-relaxed" style={{ fontFamily: 'Epilogue' }}>
+                      <span className="text-primary-background text-lg font-bold mt-0.5 flex-shrink-0">+</span>
+                      <div className="text-sm sm:text-base lg:text-sm text-text-primary leading-relaxed" style={{ fontFamily: 'Epilogue' }}>
                         MOQ Starting at just <span className="font-bold">50+ pieces</span> per size.
                       </div>
                     </div>
 
                     <div className="flex items-start gap-3">
-                      <span className="text-accent-light text-lg font-bold mt-0.5 flex-shrink-0">+</span>
-                      <div className="text-sm sm:text-base lg:text-sm text-accent-light leading-relaxed font-bold" style={{ fontFamily: 'Epilogue' }}>
+                      <span className="text-primary-background text-lg font-bold mt-0.5 flex-shrink-0">+</span>
+                      <div className="text-sm sm:text-base lg:text-sm text-text-primary leading-relaxed font-bold" style={{ fontFamily: 'Epilogue' }}>
                         Custom Labels & Packaging
                       </div>
                     </div>
 
                     <div className="flex items-start gap-3">
-                      <span className="text-accent-light text-lg font-bold mt-0.5 flex-shrink-0">+</span>
-                      <div className="text-sm sm:text-base lg:text-sm text-accent-light leading-relaxed font-bold" style={{ fontFamily: 'Epilogue' }}>
+                      <span className="text-primary-background text-lg font-bold mt-0.5 flex-shrink-0">+</span>
+                      <div className="text-sm sm:text-base lg:text-sm text-text-primary leading-relaxed font-bold" style={{ fontFamily: 'Epilogue' }}>
                         Fast Turnaround & Global Shipping
                       </div>
                     </div>
