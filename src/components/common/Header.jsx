@@ -1,11 +1,23 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
 
 const Header = ({ className, ...props }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const handleNavigation = (path) => {
+    navigate(path);
+    setMenuOpen(false); // Close mobile menu after navigation
+  };
+
+  const isActive = (path) => {
+    return location.pathname === path;
   };
 
   return (
@@ -56,28 +68,48 @@ const Header = ({ className, ...props }) => {
             <nav className="hidden lg:flex items-center gap-[30px] xl:gap-[118px]">
               <button
                 role="menuitem"
-                className="text-sm xl:text-base font-bold leading-snug text-text-primary hover:text-primary-background transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-background focus:ring-offset-2 rounded px-2 py-1"
+                onClick={() => handleNavigation('/')}
+                className={`text-sm xl:text-base font-bold leading-snug transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-background focus:ring-offset-2 rounded px-2 py-1 ${
+                  isActive('/') 
+                    ? 'text-primary-background' 
+                    : 'text-text-primary hover:text-primary-background'
+                }`}
                 style={{ fontFamily: 'Epilogue' }}
               >
                 Home
               </button>
               <button
                 role="menuitem"
-                className="text-sm xl:text-base font-bold leading-snug text-text-primary hover:text-primary-background transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-background focus:ring-offset-2 rounded px-2 py-1"
+                onClick={() => handleNavigation('/catalog')}
+                className={`text-sm xl:text-base font-bold leading-snug transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-background focus:ring-offset-2 rounded px-2 py-1 ${
+                  isActive('/catalog') 
+                    ? 'text-primary-background' 
+                    : 'text-text-primary hover:text-primary-background'
+                }`}
                 style={{ fontFamily: 'Epilogue' }}
               >
                 Catalog
               </button>
               <button
                 role="menuitem"
-                className="text-sm xl:text-base font-bold leading-snug text-text-primary hover:text-primary-background transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-background focus:ring-offset-2 rounded px-2 py-1"
+                onClick={() => handleNavigation('/service')}
+                className={`text-sm xl:text-base font-bold leading-snug transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-background focus:ring-offset-2 rounded px-2 py-1 ${
+                  isActive('/service') 
+                    ? 'text-primary-background' 
+                    : 'text-text-primary hover:text-primary-background'
+                }`}
                 style={{ fontFamily: 'Epilogue' }}
               >
                 Service
               </button>
               <button
                 role="menuitem"
-                className="text-sm xl:text-base font-bold leading-snug text-text-primary hover:text-primary-background transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-background focus:ring-offset-2 rounded px-2 py-1"
+                onClick={() => handleNavigation('/contact')}
+                className={`text-sm xl:text-base font-bold leading-snug transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-background focus:ring-offset-2 rounded px-2 py-1 ${
+                  isActive('/contact') 
+                    ? 'text-primary-background' 
+                    : 'text-text-primary hover:text-primary-background'
+                }`}
                 style={{ fontFamily: 'Epilogue' }}
               >
                 Contact
@@ -95,33 +127,49 @@ const Header = ({ className, ...props }) => {
           <div className="px-4 py-3 space-y-2">
             <button
               role="menuitem"
-              className="block w-full text-left px-3 py-2 text-sm font-bold leading-snug text-text-primary hover:text-primary-background hover:bg-background-highlight transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-background focus:ring-offset-2 rounded"
+              onClick={() => handleNavigation('/')}
+              className={`block w-full text-left px-3 py-2 text-sm font-bold leading-snug transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-background focus:ring-offset-2 rounded ${
+                isActive('/') 
+                  ? 'text-primary-background bg-background-highlight' 
+                  : 'text-text-primary hover:text-primary-background hover:bg-background-highlight'
+              }`}
               style={{ fontFamily: 'Epilogue' }}
-              onClick={() => setMenuOpen(false)}
             >
               Home
             </button>
             <button
               role="menuitem"
-              className="block w-full text-left px-3 py-2 text-sm font-bold leading-snug text-text-primary hover:text-primary-background hover:bg-background-highlight transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-background focus:ring-offset-2 rounded"
+              onClick={() => handleNavigation('/catalog')}
+              className={`block w-full text-left px-3 py-2 text-sm font-bold leading-snug transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-background focus:ring-offset-2 rounded ${
+                isActive('/catalog') 
+                  ? 'text-primary-background bg-background-highlight' 
+                  : 'text-text-primary hover:text-primary-background hover:bg-background-highlight'
+              }`}
               style={{ fontFamily: 'Epilogue' }}
-              onClick={() => setMenuOpen(false)}
             >
               Catalog
             </button>
             <button
               role="menuitem"
-              className="block w-full text-left px-3 py-2 text-sm font-bold leading-snug text-text-primary hover:text-primary-background hover:bg-background-highlight transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-background focus:ring-offset-2 rounded"
+              onClick={() => handleNavigation('/service')}
+              className={`block w-full text-left px-3 py-2 text-sm font-bold leading-snug transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-background focus:ring-offset-2 rounded ${
+                isActive('/service') 
+                  ? 'text-primary-background bg-background-highlight' 
+                  : 'text-text-primary hover:text-primary-background hover:bg-background-highlight'
+              }`}
               style={{ fontFamily: 'Epilogue' }}
-              onClick={() => setMenuOpen(false)}
             >
               Service
             </button>
             <button
               role="menuitem"
-              className="block w-full text-left px-3 py-2 text-sm font-bold leading-snug text-text-primary hover:text-primary-background hover:bg-background-highlight transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-background focus:ring-offset-2 rounded"
+              onClick={() => handleNavigation('/contact')}
+              className={`block w-full text-left px-3 py-2 text-sm font-bold leading-snug transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-background focus:ring-offset-2 rounded ${
+                isActive('/contact') 
+                  ? 'text-primary-background bg-background-highlight' 
+                  : 'text-text-primary hover:text-primary-background hover:bg-background-highlight'
+              }`}
               style={{ fontFamily: 'Epilogue' }}
-              onClick={() => setMenuOpen(false)}
             >
               Contact
             </button>
