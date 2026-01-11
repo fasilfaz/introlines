@@ -25,7 +25,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="w-full bg-background-card">
+    <section id="contact-form" className="w-full bg-background-card">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[56px] py-[64px] sm:py-[96px] lg:py-[128px]">
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-12 xl:gap-16 mb-[64px] sm:mb-[96px] lg:mb-[128px]">
           {/* Left Content */}

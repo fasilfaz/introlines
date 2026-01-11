@@ -4,19 +4,19 @@ import Button from '../../components/ui/Button';
 const FabricCatalogue = () => {
   const fabricTypes = [
     {
-      image: '/images/img_rfd_fabrics_jpg.png',
+      image: '/RFD_Fabrics.jpg.png',
       title: 'RFD Fabrics',
       description: 'Explore Fabriclore\'s RFD fabrics, including cotton, viscose, linen, and silk, ready to bring your creative vision to life.',
       details: 'Our sustainable viscose range includes internationally acclaimed materials: - LENZING : Tencel, EcoVero, Modal - BEMBERG : Cupro range of filament fabrics - LIVA and Brila Viscose Range of fabrics'
     },
     {
-      image: '/images/img_fabric_bundles_jpg.png',
+      image: '/Fabric_Bundles.png',
       title: 'Mill Dyed Fabrics',
       description: 'Explore Fabriclore\'s Solid Color Mill Dyed Fabrics, offering exceptional quality, vibrant colors, and long-lasting durability.',
       details: 'With over 100 fabric varieties across Cotton, Viscose, Linen and Polyester fabrics, each fabric offers 50+ variety of color shades. With Azo-free dyes, our fabrics ensure the perfect foundation for your sustainability goals.'
     },
     {
-      image: '/images/img_dsc04370_22dc6e.png',
+      image: '/fab.png',
       title: 'Printed Fabrics',
       description: 'Explore Fabriclore\'s Digital printed fabrics with vibrant colors and sharp details, ideal for custom designs.',
       details: 'With low MOQs (starting at just 100 meters), fast 15-day delivery, and no setup costs, it is the perfect solution for designers and brands worldwide.'

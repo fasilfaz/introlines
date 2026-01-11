@@ -3,13 +3,26 @@ import React from 'react';
 const ProcessSteps = () => {
   return (
     <section className="w-full">
-      <div 
-        className="w-full bg-gradient-to-b from-background-card to-background-highlight py-[64px] sm:py-[96px] lg:py-[128px]"
-      >
+      {/* How it Works Section */}
+      <div className="w-full bg-gradient-to-b from-background-card to-background-highlight py-[32px] sm:py-[48px] lg:py-[64px]">
         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[158px]">
-          <div className="flex justify-start items-end">
+          <div className="flex flex-col items-start gap-4 sm:gap-6 lg:gap-8">
+            {/* How it Works Title */}
+            <h1 
+              className="text-[64px] sm:text-[96px] lg:text-[128px] xl:text-[160px] font-bold leading-[0.75] text-transparent bg-gradient-to-b from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text"
+              style={{ 
+                fontFamily: 'Epilogue',
+                textShadow: '0 4px 8px rgba(0,0,0,0.1)'
+              }}
+            >
+              How it
+              <br />
+              Works?
+            </h1>
+            
+            {/* Description */}
             <h2 
-              className="text-[18px] sm:text-[24px] lg:text-[32px] font-bold leading-[24px] sm:leading-[30px] lg:leading-[41px] text-text-primary w-full lg:w-[44%] mt-[264px] sm:mt-[396px] lg:mt-[528px]"
+              className="text-[18px] sm:text-[24px] lg:text-[32px] font-bold leading-[24px] sm:leading-[30px] lg:leading-[41px] text-text-primary w-full lg:w-[44%]"
               style={{ fontFamily: 'Epilogue' }}
             >
               From idea to production - in 3 simple steps.
@@ -26,7 +39,7 @@ const ProcessSteps = () => {
         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[56px]">
           <div className="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-0 mb-6 lg:mb-[48px]">
             {/* Left Steps Content */}
-            <div className="w-full lg:w-[40%] flex flex-col gap-8 sm:gap-12 lg:gap-[98px] mt-6 lg:mt-[48px]">
+            <div className="w-full lg:w-[40%] flex flex-col gap-8 sm:gap-12 lg:gap-[98px] mt-6 lg:mt-[48px] lg:pr-8">
               {/* Step 1 */}
               <div className="flex flex-col gap-6 sm:gap-8 lg:gap-[32px]">
                 <div className="flex items-center gap-4 sm:gap-6 lg:gap-[24px]">
@@ -206,24 +219,30 @@ const ProcessSteps = () => {
                         </div>
                       </div>
                       
-                      <p 
-                        className="text-lg sm:text-xl lg:text-[24px] font-black leading-[24px] sm:leading-[28px] lg:leading-[33px] text-accent-color w-full lg:w-[28%]"
+                      <button 
+                        onClick={() => {
+                          const contactForm = document.getElementById('contact-form');
+                          if (contactForm) {
+                            contactForm.scrollIntoView({ behavior: 'smooth' });
+                          }
+                        }}
+                        className="text-lg sm:text-xl lg:text-[24px] font-black leading-[24px] sm:leading-[28px] lg:leading-[33px] text-accent-color w-full lg:w-[28%] text-left hover:opacity-80 transition-opacity cursor-pointer bg-transparent border-none p-0"
                         style={{ fontFamily: 'Epilogue' }}
                       >
                         <span className="font-black">CHAT NOW</span>
                         <span className="font-bold"> ➜</span>
-                      </p>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Right Image */}
-            <div className="w-full lg:w-[50%] relative">
+            {/* Right Image - Sticky */}
+            <div className="w-full lg:w-[50%] lg:sticky lg:top-8 lg:self-start">
               <div className="w-full max-w-[686px] h-[257px] sm:h-[385px] lg:h-[514px] rounded-md lg:rounded-[12px] overflow-hidden">
                 <img 
-                  src="/images/img_freepik_the_st_514x686.png"
+                  src="/manufa.png"
                   alt="Manufacturing Process"
                   className="w-full h-full object-cover"
                 />
