@@ -1,5 +1,12 @@
 import { useState } from 'react';
 import EditText from '../../components/ui/EditText';
+import { 
+  FaFacebookF, 
+  FaTwitter, 
+  FaInstagram, 
+  FaLinkedinIn, 
+  FaYoutube 
+} from 'react-icons/fa';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -216,31 +223,51 @@ const Footer = () => {
           <div className="flex flex-col gap-8 sm:gap-12 lg:gap-[48px] px-4 sm:px-6 lg:px-[158px]">
             {/* Social Links */}
             <div className="flex items-center gap-4 sm:gap-5 lg:gap-[24px]">
-              <img 
-                src="/images/img_link_follow_on.svg"
-                alt="Social Media"
-                className="w-5 sm:w-6 lg:w-[26px] h-5 sm:h-6 lg:h-[26px]"
-              />
-              <img 
-                src="/images/img_link_follow_on_gray_900.svg"
-                alt="Social Media"
-                className="w-5 sm:w-6 lg:w-[26px] h-5 sm:h-6 lg:h-[26px]"
-              />
-              <img 
-                src="/images/img_link_follow_on_gray_900_26x26.svg"
-                alt="Social Media"
-                className="w-5 sm:w-6 lg:w-[26px] h-5 sm:h-6 lg:h-[26px]"
-              />
-              <img 
-                src="/images/img_link_follow_on_26x26.svg"
-                alt="Social Media"
-                className="w-5 sm:w-6 lg:w-[26px] h-5 sm:h-6 lg:h-[26px]"
-              />
-              <img 
-                src="/images/img_link_follow_on_1.svg"
-                alt="Social Media"
-                className="w-5 sm:w-6 lg:w-[26px] h-5 sm:h-6 lg:h-[26px]"
-              />
+              <a 
+                href="https://facebook.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-5 sm:w-6 lg:w-[26px] h-5 sm:h-6 lg:h-[26px] text-text-secondary hover:text-primary-background transition-colors duration-200 flex items-center justify-center"
+                aria-label="Follow us on Facebook"
+              >
+                <FaFacebookF className="w-full h-full" />
+              </a>
+              <a 
+                href="https://twitter.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-5 sm:w-6 lg:w-[26px] h-5 sm:h-6 lg:h-[26px] text-text-secondary hover:text-primary-background transition-colors duration-200 flex items-center justify-center"
+                aria-label="Follow us on Twitter"
+              >
+                <FaTwitter className="w-full h-full" />
+              </a>
+              <a 
+                href="https://instagram.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-5 sm:w-6 lg:w-[26px] h-5 sm:h-6 lg:h-[26px] text-text-secondary hover:text-primary-background transition-colors duration-200 flex items-center justify-center"
+                aria-label="Follow us on Instagram"
+              >
+                <FaInstagram className="w-full h-full" />
+              </a>
+              <a 
+                href="https://linkedin.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-5 sm:w-6 lg:w-[26px] h-5 sm:h-6 lg:h-[26px] text-text-secondary hover:text-primary-background transition-colors duration-200 flex items-center justify-center"
+                aria-label="Follow us on LinkedIn"
+              >
+                <FaLinkedinIn className="w-full h-full" />
+              </a>
+              <a 
+                href="https://youtube.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-5 sm:w-6 lg:w-[26px] h-5 sm:h-6 lg:h-[26px] text-text-secondary hover:text-primary-background transition-colors duration-200 flex items-center justify-center"
+                aria-label="Follow us on YouTube"
+              >
+                <FaYoutube className="w-full h-full" />
+              </a>
             </div>
 
             {/* Copyright */}
