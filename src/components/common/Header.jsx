@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
 
@@ -6,9 +6,29 @@ const Header = ({ className, ...props }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+  const headerRef = useRef(null);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (headerRef.current && !headerRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    if (menuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuOpen]);
 
   const toggleMenu = () => {
+    console.log('Menu toggle clicked, current state:', menuOpen);
     setMenuOpen(!menuOpen);
+    console.log('Menu state after toggle:', !menuOpen);
   };
 
   const handleNavigation = (path) => {
@@ -22,8 +42,9 @@ const Header = ({ className, ...props }) => {
 
   return (
     <header 
+      ref={headerRef}
       className={twMerge(
-        'w-full bg-header-background shadow-[0px_4px_20px_#888888ff]',
+        'w-full bg-header-background shadow-[0px_4px_20px_#888888ff] relative z-50',
         className
       )}
       {...props}
@@ -43,9 +64,10 @@ const Header = ({ className, ...props }) => {
 
             {/* Hamburger Menu Icon (Mobile only) */}
             <button 
-              className="block lg:hidden p-2 hover:bg-gray-100 rounded-md transition-colors"
+              className="block lg:hidden p-2 hover:bg-gray-100 rounded-md transition-colors z-50 relative"
               aria-label="Toggle navigation menu"
               onClick={toggleMenu}
+              type="button"
             >
               <svg 
                 className="w-6 h-6 text-text-primary" 
@@ -119,12 +141,16 @@ const Header = ({ className, ...props }) => {
         </div>
 
         {/* Mobile Navigation Menu */}
-        <nav 
-          className={`${menuOpen ? 'block' : 'hidden'} lg:hidden bg-header-background border-t border-border-primary`}
-          role="navigation"
-          aria-label="Mobile navigation"
+        <div 
+          className={`lg:hidden bg-header-background border-t border-border-primary relative z-40 overflow-hidden transition-all duration-300 ease-in-out ${
+            menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          }`}
         >
-          <div className="px-4 py-3 space-y-2">
+          <nav 
+            role="navigation"
+            aria-label="Mobile navigation"
+            className="px-4 py-3 space-y-2"
+          >
             <button
               role="menuitem"
               onClick={() => handleNavigation('/')}
@@ -173,8 +199,8 @@ const Header = ({ className, ...props }) => {
             >
               Contact
             </button>
-          </div>
-        </nav>
+            </nav>
+        </div>
       </div>
     </header>
   );
