@@ -30,7 +30,7 @@ const GarmentManufacturing = () => {
       <main>
         <Header className="" />
         <HeroSection />
-        <ManufacturingCapabilities />
+        {/* <ManufacturingCapabilities /> */}
         <TrustSection />
         <ServiceFeatures />
         <ContactForm />

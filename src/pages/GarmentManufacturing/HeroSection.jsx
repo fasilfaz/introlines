@@ -12,20 +12,19 @@ const HeroSection = () => {
               className="text-[48px] sm:text-[64px] md:text-[80px] lg:text-[96px] xl:text-[112px] font-bold leading-[1.1] text-primary-background"
               style={{ fontFamily: 'Epilogue' }}
             >
-              Garment
+              India's
               <br />
-              Manufacturing in
+              Finest
               <br />
-              India
+              Exported
             </h2>
           </div>
         </div>
       </section>
       {/* First Hero Section - Split Layout */}
-      <section className="w-full bg-background-card">
+      {/* <section className="w-full bg-background-card">
         <div className="w-full max-w-[1440px] mx-auto">
           <div className="flex flex-col lg:flex-row min-h-[300px] lg:min-h-[400px]">
-            {/* Left Image Section */}
             <div className="w-full lg:w-1/2 relative">
               <div className="h-[300px] sm:h-[400px] lg:h-full">
                 <img 
@@ -36,11 +35,9 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* Right Content Section */}
             <div className="w-full lg:w-1/2 bg-background-highlight flex items-center">
               <div className="px-6 sm:px-8 lg:px-6 py-8 sm:py-12 lg:py-6 w-full">
                 <div className="max-w-lg">
-                  {/* Main Heading */}
                   <h1 
                     className="text-[28px] sm:text-[32px] lg:text-[32px] xl:text-[36px] font-bold leading-[1.2] text-text-primary mb-4 sm:mb-6 lg:mb-3"
                     style={{ fontFamily: 'Epilogue' }}
@@ -51,8 +48,6 @@ const HeroSection = () => {
                     <br />
                     Low MOQ
                   </h1>
-
-                  {/* Feature List */}
                   <div className="space-y-3 sm:space-y-4 lg:space-y-2 mb-6 sm:mb-8 lg:mb-4">
                     <div className="flex items-start gap-3">
                       <span className="text-primary-background text-lg font-bold mt-0.5 flex-shrink-0">+</span>
@@ -84,8 +79,6 @@ const HeroSection = () => {
                       </div>
                     </div>
                   </div>
-
-                  {/* CTA Button */}
                   <Button
                     text="Chat Now"
                     fill_background_color="bg-primary-background"
@@ -105,7 +98,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
      
     </>

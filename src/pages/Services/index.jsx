@@ -56,7 +56,7 @@ const Services = () => {
         <ServicesHeroSection />
         <ServiceFeatures />
         <IntrolinesSection />
-        <ManufacturingCapabilities />
+        {/* <ManufacturingCapabilities /> */}
         <ProcessSteps />
         <WhyFabriclore />
         {/* <FAQ /> */}
